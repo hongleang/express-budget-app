@@ -61,8 +61,8 @@ const transferMoney = (value, transactionEnvelope) => {
 
     if (fromEnvelope < 0 || toEnvelope < 0) return null;
 
-    ENVELOPES[fromEnvelope].amountOfMoney -= value.transferMoney;
-    ENVELOPES[toEnvelope].amountOfMoney += value.transferMoney;
+    ENVELOPES[fromEnvelope].amountOfMoney -= Number(value.transferMoney);
+    ENVELOPES[toEnvelope].amountOfMoney += Number(value.transferMoney);
 
     if (ENVELOPES[fromEnvelope].amountOfMoney < 0) {
         return {
