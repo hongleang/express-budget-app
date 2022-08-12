@@ -1,4 +1,4 @@
-# Personal budget envelop
+# Personal budget envelope
 
 ## All Endpoints
 
